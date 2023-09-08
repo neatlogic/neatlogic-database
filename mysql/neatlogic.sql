@@ -19,7 +19,6 @@
 -- Table structure for table `captcha`
 --
 
-DROP TABLE IF EXISTS `captcha`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `captcha` (
@@ -35,16 +34,13 @@ CREATE TABLE `captcha` (
 -- Dumping data for table `captcha`
 --
 
-LOCK TABLES `captcha` WRITE;
 /*!40000 ALTER TABLE `captcha` DISABLE KEYS */;
 /*!40000 ALTER TABLE `captcha` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `datasource`
 --
 
-DROP TABLE IF EXISTS `datasource`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `datasource` (
@@ -65,17 +61,14 @@ CREATE TABLE `datasource` (
 -- Dumping data for table `datasource`
 --
 
-LOCK TABLES `datasource` WRITE;
 /*!40000 ALTER TABLE `datasource` DISABLE KEYS */;
 INSERT INTO `datasource` VALUES (1,'demo','jdbc:mysql://{host}:{port}/{dbname}?characterEncoding=UTF-8&jdbcCompliantTruncation=false&allowMultiQueries=true&useSSL=false&&serverTimeZone=Asia/Shanghai','root','root','com.mysql.cj.jdbc.Driver','127.0.0.1',3306);
 /*!40000 ALTER TABLE `datasource` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `documentonline_config`
 --
 
-DROP TABLE IF EXISTS `documentonline_config`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `documentonline_config` (
@@ -91,16 +84,13 @@ CREATE TABLE `documentonline_config` (
 -- Dumping data for table `documentonline_config`
 --
 
-LOCK TABLES `documentonline_config` WRITE;
 /*!40000 ALTER TABLE `documentonline_config` DISABLE KEYS */;
 /*!40000 ALTER TABLE `documentonline_config` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `master_user`
 --
 
-DROP TABLE IF EXISTS `master_user`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `master_user` (
@@ -123,17 +113,14 @@ CREATE TABLE `master_user` (
 -- Dumping data for table `master_user`
 --
 
-LOCK TABLES `master_user` WRITE;
 /*!40000 ALTER TABLE `master_user` DISABLE KEYS */;
 INSERT INTO `master_user` VALUES ('111','admin','管理员','admin',NULL,NULL,1,NULL,0,NULL,'2023-09-07 09:28:57.000');
 /*!40000 ALTER TABLE `master_user` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `master_user_password`
 --
 
-DROP TABLE IF EXISTS `master_user_password`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `master_user_password` (
@@ -151,17 +138,14 @@ CREATE TABLE `master_user_password` (
 -- Dumping data for table `master_user_password`
 --
 
-LOCK TABLES `master_user_password` WRITE;
 /*!40000 ALTER TABLE `master_user_password` DISABLE KEYS */;
 INSERT INTO `master_user_password` VALUES (111,'111','admin','{MD5}e10adc3949ba59abbe56e057f20f883e',NULL,1);
 /*!40000 ALTER TABLE `master_user_password` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `master_user_session`
 --
 
-DROP TABLE IF EXISTS `master_user_session`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `master_user_session` (
@@ -175,16 +159,13 @@ CREATE TABLE `master_user_session` (
 -- Dumping data for table `master_user_session`
 --
 
-LOCK TABLES `master_user_session` WRITE;
 /*!40000 ALTER TABLE `master_user_session` DISABLE KEYS */;
 /*!40000 ALTER TABLE `master_user_session` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `mongodb`
 --
 
-DROP TABLE IF EXISTS `mongodb`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `mongodb` (
@@ -204,17 +185,14 @@ CREATE TABLE `mongodb` (
 -- Dumping data for table `mongodb`
 --
 
-LOCK TABLES `mongodb` WRITE;
 /*!40000 ALTER TABLE `mongodb` DISABLE KEYS */;
 INSERT INTO `mongodb` VALUES (1,'demo','autoexec','autoexec','mongodbPwd','127.0.0.1:27017','authSource=autoexec');
 /*!40000 ALTER TABLE `mongodb` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `server_counter`
 --
 
-DROP TABLE IF EXISTS `server_counter`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `server_counter` (
@@ -229,16 +207,13 @@ CREATE TABLE `server_counter` (
 -- Dumping data for table `server_counter`
 --
 
-LOCK TABLES `server_counter` WRITE;
 /*!40000 ALTER TABLE `server_counter` DISABLE KEYS */;
 /*!40000 ALTER TABLE `server_counter` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `server_status`
 --
 
-DROP TABLE IF EXISTS `server_status`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `server_status` (
@@ -260,17 +235,14 @@ CREATE TABLE `server_status` (
 -- Dumping data for table `server_status`
 --
 
-LOCK TABLES `server_status` WRITE;
 /*!40000 ALTER TABLE `server_status` DISABLE KEYS */;
 INSERT INTO `server_status` VALUES ('http://192.168.0.104:8282',1,'startup',3,5,'2023-09-07 09:28:57.937','system','2023-09-07 09:28:57.937','system','2023-09-07 09:28:57.937'),('http://192.168.0.97:8282',97,'startup',3,5,'2023-09-07 09:28:57.944','system','2023-09-07 09:28:57.944','system','2023-09-07 09:28:57.944'),(NULL,8341,'startup',3,5,'2023-09-07 09:28:57.949','system','2023-09-07 09:28:57.949','system','2023-09-07 09:28:57.949');
 /*!40000 ALTER TABLE `server_status` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `tenant`
 --
 
-DROP TABLE IF EXISTS `tenant`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tenant` (
@@ -294,17 +266,14 @@ CREATE TABLE `tenant` (
 -- Dumping data for table `tenant`
 --
 
-LOCK TABLES `tenant` WRITE;
 /*!40000 ALTER TABLE `tenant` DISABLE KEYS */;
 INSERT INTO `tenant` VALUES (1,'demo','demo',1,NULL,NULL,NULL,NULL,NULL,'2023-09-07 09:28:58.000',NULL);
 /*!40000 ALTER TABLE `tenant` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `tenant_audit`
 --
 
-DROP TABLE IF EXISTS `tenant_audit`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tenant_audit` (
@@ -327,16 +296,13 @@ CREATE TABLE `tenant_audit` (
 -- Dumping data for table `tenant_audit`
 --
 
-LOCK TABLES `tenant_audit` WRITE;
 /*!40000 ALTER TABLE `tenant_audit` DISABLE KEYS */;
 /*!40000 ALTER TABLE `tenant_audit` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `tenant_audit_detail`
 --
 
-DROP TABLE IF EXISTS `tenant_audit_detail`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tenant_audit_detail` (
@@ -350,16 +316,13 @@ CREATE TABLE `tenant_audit_detail` (
 -- Dumping data for table `tenant_audit_detail`
 --
 
-LOCK TABLES `tenant_audit_detail` WRITE;
 /*!40000 ALTER TABLE `tenant_audit_detail` DISABLE KEYS */;
 /*!40000 ALTER TABLE `tenant_audit_detail` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `tenant_module`
 --
 
-DROP TABLE IF EXISTS `tenant_module`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tenant_module` (
@@ -377,16 +340,13 @@ CREATE TABLE `tenant_module` (
 -- Dumping data for table `tenant_module`
 --
 
-LOCK TABLES `tenant_module` WRITE;
 /*!40000 ALTER TABLE `tenant_module` DISABLE KEYS */;
 /*!40000 ALTER TABLE `tenant_module` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `tenant_module_dmlsql`
 --
 
-DROP TABLE IF EXISTS `tenant_module_dmlsql`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tenant_module_dmlsql` (
@@ -403,16 +363,13 @@ CREATE TABLE `tenant_module_dmlsql` (
 -- Dumping data for table `tenant_module_dmlsql`
 --
 
-LOCK TABLES `tenant_module_dmlsql` WRITE;
 /*!40000 ALTER TABLE `tenant_module_dmlsql` DISABLE KEYS */;
 /*!40000 ALTER TABLE `tenant_module_dmlsql` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `tenant_modulegroup`
 --
 
-DROP TABLE IF EXISTS `tenant_modulegroup`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tenant_modulegroup` (
@@ -427,11 +384,9 @@ CREATE TABLE `tenant_modulegroup` (
 -- Dumping data for table `tenant_modulegroup`
 --
 
-LOCK TABLES `tenant_modulegroup` WRITE;
 /*!40000 ALTER TABLE `tenant_modulegroup` DISABLE KEYS */;
 INSERT INTO `tenant_modulegroup` VALUES (1,'demo','autoexec'),(1,'demo','cmdb'),(1,'demo','dashboard'),(1,'demo','deploy'),(1,'demo','inspect'),(1,'demo','knowledge'),(1,'demo','pbc'),(1,'demo','process'),(1,'demo','rdm'),(1,'demo','report');
 /*!40000 ALTER TABLE `tenant_modulegroup` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -442,4 +397,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-09-08  4:00:01
+-- Dump completed on 2023-09-08 11:12:02
