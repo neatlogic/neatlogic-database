@@ -38,6 +38,52 @@ CREATE TABLE `captcha` (
 /*!40000 ALTER TABLE `captcha` ENABLE KEYS */;
 
 --
+-- Table structure for table `changelog_audit`
+--
+
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `changelog_audit` (
+  `version` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '版本',
+  `tenant_uuid` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '租户uuid,主库是0',
+  `module_id` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '模块id',
+  `sql_hash` char(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT 'sql hash,防止重跑',
+  `sql_status` tinyint(1) DEFAULT '1' COMMENT 'sql执行状态',
+  `error_msg` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci COMMENT '异常信息',
+  `ignored` tinyint(1) DEFAULT '0' COMMENT '是否忽略，0:不忽略，1:已忽略，默认不忽略',
+  `lcd` timestamp(3) NULL DEFAULT NULL COMMENT '执行时间',
+  PRIMARY KEY (`tenant_uuid`,`module_id`,`version`,`sql_hash`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci ROW_FORMAT=DYNAMIC;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `changelog_audit`
+--
+
+/*!40000 ALTER TABLE `changelog_audit` DISABLE KEYS */;
+/*!40000 ALTER TABLE `changelog_audit` ENABLE KEYS */;
+
+--
+-- Table structure for table `changelog_audit_detail`
+--
+
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `changelog_audit_detail` (
+  `hash` char(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT 'sql 哈希值',
+  `sql` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci COMMENT 'sql ',
+  PRIMARY KEY (`hash`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci ROW_FORMAT=DYNAMIC;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `changelog_audit_detail`
+--
+
+/*!40000 ALTER TABLE `changelog_audit_detail` DISABLE KEYS */;
+/*!40000 ALTER TABLE `changelog_audit_detail` ENABLE KEYS */;
+
+--
 -- Table structure for table `datasource`
 --
 
@@ -105,6 +151,8 @@ CREATE TABLE `master_user` (
   `is_email_active` tinyint(1) DEFAULT NULL,
   `active_email_time` timestamp(3) NULL DEFAULT NULL COMMENT '激活邮件发送时间',
   `fcd` timestamp(3) NULL DEFAULT NULL COMMENT '创建时间',
+  `email_send_count` int DEFAULT '0' COMMENT '邮件发送次数',
+  `is_subscribe` tinyint DEFAULT '1' COMMENT '是否订阅',
   PRIMARY KEY (`uuid`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -114,7 +162,7 @@ CREATE TABLE `master_user` (
 --
 
 /*!40000 ALTER TABLE `master_user` DISABLE KEYS */;
-INSERT INTO `master_user` VALUES ('111','admin','管理员','admin',NULL,NULL,1,NULL,0,NULL,'2023-09-07 09:28:57.000');
+INSERT INTO `master_user` VALUES ('111','admin','管理员','admin',NULL,NULL,1,NULL,0,NULL,'2023-09-07 09:28:57.000',0,1);
 /*!40000 ALTER TABLE `master_user` ENABLE KEYS */;
 
 --
@@ -131,7 +179,7 @@ CREATE TABLE `master_user_password` (
   `create_time` timestamp NULL DEFAULT NULL COMMENT '创建时间',
   `is_active` tinyint(1) DEFAULT NULL COMMENT '有效性',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=118 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=204 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -176,6 +224,7 @@ CREATE TABLE `mongodb` (
   `password` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '密码',
   `host` varchar(1025) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '主机ip',
   `option` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '选择项',
+  `auth_config` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci COMMENT '存放租户管理用于认证的信息',
   PRIMARY KEY (`tenant_id`) USING BTREE,
   UNIQUE KEY `uk_tenant_uuid` (`tenant_uuid`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='mogodb数据库信息';
@@ -186,7 +235,7 @@ CREATE TABLE `mongodb` (
 --
 
 /*!40000 ALTER TABLE `mongodb` DISABLE KEYS */;
-INSERT INTO `mongodb` VALUES (1,'demo','autoexec','autoexec','mongodbPwd','127.0.0.1:27017','authSource=autoexec');
+INSERT INTO `mongodb` VALUES (1,'demo','autoexec','autoexec','mongodbPwd','127.0.0.1:27017','authSource=autoexec',NULL);
 /*!40000 ALTER TABLE `mongodb` ENABLE KEYS */;
 
 --
@@ -251,11 +300,11 @@ CREATE TABLE `tenant` (
   `name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '租户名',
   `is_active` tinyint(1) DEFAULT '1' COMMENT '1:启用，0:禁用',
   `status` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '租户状态',
-  `expire_date` timestamp NULL DEFAULT NULL COMMENT '有效期',
+  `expire_date` timestamp(3) NULL DEFAULT NULL COMMENT '有效期',
   `description` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '描述',
   `error_msg` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci COMMENT '创建租户异常',
   `is_need_demo` tinyint(1) DEFAULT NULL COMMENT '创建租户是否携带demo数据',
-  `visit_time` timestamp(3) NULL DEFAULT NULL COMMENT '当天第一次访问时间',
+  `visit_time` timestamp(3) NULL DEFAULT NULL COMMENT '租户当天第一次访问时间',
   `fcd` timestamp(3) NULL DEFAULT NULL COMMENT '创建时间',
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE KEY `uk_uuid` (`uuid`) USING BTREE
@@ -279,7 +328,7 @@ INSERT INTO `tenant` VALUES (1,'demo','demo',1,NULL,NULL,NULL,NULL,NULL,'2023-09
 CREATE TABLE `tenant_audit` (
   `id` bigint NOT NULL COMMENT '自增id',
   `group_id` bigint DEFAULT NULL COMMENT '分组id',
-  `tenant_id` bigint NOT NULL COMMENT '租户id',
+  `tenant_uuid` char(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '租户uuid',
   `module_group` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '模块组',
   `module_id` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '模块id',
   `start_time` timestamp(3) NULL DEFAULT NULL COMMENT '开始时间',
@@ -326,13 +375,14 @@ CREATE TABLE `tenant_audit_detail` (
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tenant_module` (
-  `tenant_id` bigint NOT NULL COMMENT '租户id',
+  `tenant_uuid` char(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '租户uuid',
   `module_id` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '模块id',
   `ddl_status` tinyint(1) DEFAULT '0' COMMENT 'ddl执行状态,1:成功 0:未开始 -1 :失败',
   `dml_status` tinyint(1) DEFAULT '0' COMMENT 'dml执行状态,1:成功 0:未开始 -1:失败',
+  `version` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '版本',
   `fcd` timestamp(3) NULL DEFAULT NULL COMMENT '添加日期',
   `lcd` timestamp(3) NULL DEFAULT NULL COMMENT '更新日期',
-  PRIMARY KEY (`tenant_id`,`module_id`) USING BTREE
+  PRIMARY KEY (`tenant_uuid`,`module_id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -354,6 +404,8 @@ CREATE TABLE `tenant_module_dmlsql` (
   `module_id` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '模块id',
   `sql_uuid` char(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT 'sql md5',
   `sql_status` tinyint(1) DEFAULT NULL COMMENT 'sql执行状态,1:已执行',
+  `type` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '类型',
+  `error_msg` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci COMMENT '错误原因',
   `fcd` timestamp(3) NULL DEFAULT NULL COMMENT '执行时间',
   PRIMARY KEY (`tenant_uuid`,`module_id`,`sql_uuid`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci ROW_FORMAT=DYNAMIC;
@@ -365,6 +417,26 @@ CREATE TABLE `tenant_module_dmlsql` (
 
 /*!40000 ALTER TABLE `tenant_module_dmlsql` DISABLE KEYS */;
 /*!40000 ALTER TABLE `tenant_module_dmlsql` ENABLE KEYS */;
+
+--
+-- Table structure for table `tenant_module_dmlsql_detail`
+--
+
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tenant_module_dmlsql_detail` (
+  `hash` char(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT 'sql 唯一标识hash',
+  `sql` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT 'sql 语句',
+  PRIMARY KEY (`hash`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci ROW_FORMAT=DYNAMIC;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tenant_module_dmlsql_detail`
+--
+
+/*!40000 ALTER TABLE `tenant_module_dmlsql_detail` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tenant_module_dmlsql_detail` ENABLE KEYS */;
 
 --
 -- Table structure for table `tenant_modulegroup`
@@ -387,6 +459,27 @@ CREATE TABLE `tenant_modulegroup` (
 /*!40000 ALTER TABLE `tenant_modulegroup` DISABLE KEYS */;
 INSERT INTO `tenant_modulegroup` VALUES (1,'demo','autoexec'),(1,'demo','cmdb'),(1,'demo','dashboard'),(1,'demo','deploy'),(1,'demo','inspect'),(1,'demo','knowledge'),(1,'demo','pbc'),(1,'demo','process'),(1,'demo','rdm'),(1,'demo','report');
 /*!40000 ALTER TABLE `tenant_modulegroup` ENABLE KEYS */;
+
+--
+-- Table structure for table `version`
+--
+
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `version` (
+  `version` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '版本',
+  `fcd` timestamp(3) NULL DEFAULT NULL COMMENT '创建时间',
+  `lcd` timestamp(3) NULL DEFAULT NULL COMMENT '修改时间',
+  PRIMARY KEY (`version`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci ROW_FORMAT=DYNAMIC COMMENT='neatlogic 库版本';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `version`
+--
+
+/*!40000 ALTER TABLE `version` DISABLE KEYS */;
+/*!40000 ALTER TABLE `version` ENABLE KEYS */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -397,4 +490,4 @@ INSERT INTO `tenant_modulegroup` VALUES (1,'demo','autoexec'),(1,'demo','cmdb'),
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-10-17  4:00:01
+-- Dump completed on 2023-10-18  4:00:01
