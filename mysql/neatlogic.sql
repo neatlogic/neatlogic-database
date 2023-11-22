@@ -462,7 +462,7 @@ CREATE TABLE `tenant_modulegroup` (
 --
 
 /*!40000 ALTER TABLE `tenant_modulegroup` DISABLE KEYS */;
-INSERT INTO `tenant_modulegroup` VALUES (1,'demo','autoexec'),(1,'demo','cmdb'),(1,'demo','dashboard'),(1,'demo','deploy'),(1,'demo','inspect'),(1,'demo','knowledge'),(1,'demo','pbc'),(1,'demo','process'),(1,'demo','rdm'),(1,'demo','report');
+INSERT INTO `tenant_modulegroup` VALUES (1,'demo','autoexec'),(1,'demo','cmdb'),(1,'demo','codehub'),(1,'demo','dashboard'),(1,'demo','deploy'),(1,'demo','inspect'),(1,'demo','knowledge'),(1,'demo','pbc'),(1,'demo','process'),(1,'demo','rdm'),(1,'demo','report');
 /*!40000 ALTER TABLE `tenant_modulegroup` ENABLE KEYS */;
 
 --
@@ -496,4 +496,4 @@ INSERT INTO `version` VALUES ('2023-11-09','2023-11-10 02:30:13.000','2023-11-10
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-11-22  4:00:02
+-- Dump completed on 2023-11-22 18:45:00
