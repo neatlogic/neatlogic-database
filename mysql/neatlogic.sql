@@ -61,7 +61,7 @@ CREATE TABLE `changelog_audit` (
 --
 
 /*!40000 ALTER TABLE `changelog_audit` DISABLE KEYS */;
-INSERT INTO `changelog_audit` VALUES ('2024-01-26','demo','cmdb','690f45115f9f280443774e836599d671',1,NULL,0,'2024-01-31 04:04:24.000'),('2024-01-26','demo','cmdb','ca32d7b5ae3823875afa38ed75fe8cf6',1,NULL,0,'2024-01-31 04:04:24.000');
+INSERT INTO `changelog_audit` VALUES ('2024-02-18','0','framework','1098d198eff33e1f57000310352868b5',1,NULL,0,'2024-03-08 10:23:32.000'),('2024-02-18','0','framework','18be4a5ecf54c91c164171fe34b79ced',1,NULL,0,'2024-03-08 10:23:32.000'),('2024-02-18','0','framework','1f7f60734dd21e94df2b192a106398e9',1,NULL,0,'2024-03-08 10:23:32.000'),('2024-02-18','0','framework','2b20ef18c7bb133a48b6737dddeed935',1,NULL,0,'2024-03-08 10:23:31.000'),('2024-02-18','0','framework','2bcb5c0a22c049b216f00ea7c660e3cd',1,NULL,0,'2024-03-08 10:23:33.000'),('2024-02-18','0','framework','4f8f602a143d0470b09470ef53382050',1,NULL,0,'2024-03-08 10:23:33.000'),('2024-02-18','0','framework','6699ea5ba573049f60e40ffe831a9c3e',1,NULL,0,'2024-03-08 10:23:34.000'),('2024-02-18','0','framework','6eaa9634ce53657f7b5139cbf7d1844b',1,NULL,0,'2024-03-08 10:23:31.000'),('2024-02-18','0','framework','77b4c9bf081f3c3d8cd7d88d86003fdc',1,NULL,0,'2024-03-08 10:23:32.000'),('2024-02-18','0','framework','7d7a4b51a9fd22b9174d516e71b25613',1,NULL,0,'2024-03-08 10:23:30.000'),('2024-02-18','0','framework','832b57b37548d3307cfdea4bc1211b7c',1,NULL,0,'2024-03-08 10:23:33.000'),('2024-02-18','0','framework','8db37669b99652a8eb60c39f2e11f2f6',1,NULL,0,'2024-03-08 10:23:33.000'),('2024-02-18','0','framework','911d77661b752ad090e645f8a9d2647e',1,NULL,0,'2024-03-08 10:23:32.000'),('2024-02-18','0','framework','9c93a752d3d04c8718845da9c96335fa',1,NULL,0,'2024-03-08 10:23:34.000'),('2024-02-18','0','framework','9cea396e1e814f6ff58be3d11c3f84ff',1,NULL,0,'2024-03-08 10:23:34.000'),('2024-02-18','0','framework','a93e082378fd3676681d51b4368033d1',1,NULL,0,'2024-03-08 10:23:32.000'),('2024-02-18','0','framework','ab40f0806909585662d9a181050befc0',1,NULL,0,'2024-03-08 10:23:32.000'),('2024-02-18','0','framework','ab8500384bff9eed23b59d0345d5a0ac',1,NULL,0,'2024-03-08 10:23:32.000'),('2024-02-18','0','framework','ad8548cea45c89bb5430ba124466aa72',1,NULL,0,'2024-03-08 10:23:30.000'),('2024-02-18','0','framework','b93251dabeca1d2e016de94200536eb6',1,NULL,0,'2024-03-08 10:23:31.000'),('2024-02-18','0','framework','c1dc48805d0e708103aa128463e04d31',1,NULL,0,'2024-03-08 10:23:34.000'),('2024-02-18','0','framework','c413595333448e21cd931689caae967a',1,NULL,0,'2024-03-08 10:23:31.000'),('2024-02-18','0','framework','d72b72362b148e3f49bfe8fb987122c5',1,NULL,0,'2024-03-08 10:23:31.000'),('2024-02-18','0','framework','d7f7727b75a771da6d4bec29c72b4031',1,NULL,0,'2024-03-08 10:23:31.000'),('2024-02-18','0','framework','e4affaa417cb67a6147c4d28f7f9194f',1,NULL,0,'2024-03-08 10:23:33.000'),('2024-02-18','0','framework','eb91f89f7882d21bd540baea7794035a',1,NULL,0,'2024-03-08 10:23:33.000'),('2024-02-18','0','framework','f651416819d20471b43ab71b2f8da9f5',1,NULL,0,'2024-03-08 10:23:32.000'),('2024-02-18','0','framework','fe158bbd96e01e4bd5c871dc60dff730',1,NULL,0,'2024-03-08 10:23:33.000'),('2024-02-21','0','framework','5426233ce9eb3fe94a5a9df57a0f4d98',1,NULL,0,'2024-03-08 10:23:34.000'),('2024-02-21','0','framework','79e4935f46754f26ddf419bb04b52125',1,NULL,0,'2024-03-08 10:23:34.000'),('2024-02-21','0','framework','7d45242895eddd0287da83e735793556',1,NULL,0,'2024-03-08 10:23:34.000'),('2024-01-26','demo','cmdb','690f45115f9f280443774e836599d671',1,NULL,0,'2024-01-31 04:04:24.000'),('2024-01-26','demo','cmdb','95cf9d9c2a65a747cd539fb90e6dd5a7',0,'  ✖demo·cmdb.2024-01-26·neatlogic_tenant.sql: Error executing: ALTER TABLE `cmdb_attr`    ADD COLUMN `is_searchable` tinyint NULL COMMENT \'是否允许搜索\' AFTER `is_required`\n.  Cause: java.sql.SQLSyntaxErrorException: Duplicate column name \'is_searchable\'\n',1,'2024-03-08 10:23:35.000'),('2024-01-26','demo','cmdb','ca32d7b5ae3823875afa38ed75fe8cf6',1,NULL,0,'2024-01-31 04:04:24.000'),('2024-01-26','demo','cmdb','ee31ebd60d40eaec8889157928c75520',0,'  ✖demo·cmdb.2024-01-26·neatlogic_tenant.sql: Error executing: ALTER TABLE `mq_topic`    ADD COLUMN `config` longtext NULL COMMENT \'配置\' AFTER `is_active`\n.  Cause: java.sql.SQLSyntaxErrorException: Duplicate column name \'config\'\n',1,'2024-03-08 10:23:35.000'),('2024-02-02','demo','cmdb','927f27378a3f3a6ef3f34ad35000e28c',1,NULL,0,'2024-03-08 10:23:35.000'),('2024-02-05','demo','cmdb','e42a593b065738aecf6a7e184aa2f4e0',1,NULL,0,'2024-03-08 10:23:36.000'),('2024-02-06','demo','cmdb','76d8c243ea682bf120373698c1f15bf8',1,NULL,0,'2024-03-08 10:23:36.000'),('2024-03-01','demo','diagram','0580bfe61ba804d1a120a60663a00c2a',1,NULL,0,'2024-03-08 10:23:41.000'),('2024-03-01','demo','diagram','179df822ffd6d39be89591b4fcfe382b',1,NULL,0,'2024-03-08 10:23:40.000'),('2024-03-01','demo','diagram','2a74a9d804d4ffd52cdaeb59371021fb',1,NULL,0,'2024-03-08 10:23:40.000'),('2024-03-01','demo','diagram','39087e884ea2c85923975813b14ca1e8',1,NULL,0,'2024-03-08 10:23:40.000'),('2024-03-01','demo','diagram','8206ae74d1fdc387c872f6595a9fd752',1,NULL,0,'2024-03-08 10:23:41.000'),('2024-03-01','demo','diagram','96237da380da63f21b615a5e4c1b3dd6',1,NULL,0,'2024-03-08 10:23:40.000'),('2024-03-01','demo','diagram','9c9d43cd11ed00f1b2e944ab80832265',1,NULL,0,'2024-03-08 10:23:40.000'),('2024-03-01','demo','diagram','c02ffc705d2b935a5829ad1d9ad13a34',1,NULL,0,'2024-03-08 10:23:40.000'),('2024-02-20','demo','eoa','292e0f9379b9935d4480c89b29639eca',1,NULL,0,'2024-03-08 10:23:37.000'),('2024-02-20','demo','eoa','3d7488727423f82b33af796b76839d67',1,NULL,0,'2024-03-08 10:23:37.000'),('2024-02-20','demo','eoa','524772d047cc4c463b4a7744a5cf2b7f',1,NULL,0,'2024-03-08 10:23:37.000'),('2024-02-20','demo','eoa','7133a8520cef8a4004f5cb132acf2361',1,NULL,0,'2024-03-08 10:23:37.000'),('2024-02-20','demo','eoa','786958578b62cc04f4e10d7920e33a32',1,NULL,0,'2024-03-08 10:23:36.000'),('2024-02-20','demo','eoa','8492bb6aa97fb500fb42ecae0cedfced',1,NULL,0,'2024-03-08 10:23:37.000'),('2024-02-20','demo','eoa','8a435933959703dc62bc123442ff92e4',1,NULL,0,'2024-03-08 10:23:37.000'),('2024-02-20','demo','eoa','b2258c7c0f264b32cf7c3636de5a17b3',1,NULL,0,'2024-03-08 10:23:37.000'),('2024-02-22','demo','framework','313141e2100da24b876642ed1dfa1239',1,NULL,0,'2024-03-08 10:23:39.000'),('2024-02-22','demo','framework','33d747bce279f9346feda96ca50ceeec',1,NULL,0,'2024-03-08 10:23:38.000'),('2024-02-22','demo','framework','6281730e3667c8e9d03f9228033fcaa6',1,NULL,0,'2024-03-08 10:23:39.000'),('2024-02-22','demo','framework','7e5f9b0a1e6bab5877fe0975330370a8',1,NULL,0,'2024-03-08 10:23:39.000'),('2024-02-22','demo','framework','895f208a7d5c8185487fdcbde9421031',1,NULL,0,'2024-03-08 10:23:38.000'),('2024-02-22','demo','framework','a67a939c1c9ff979c69076ac102573fb',1,NULL,0,'2024-03-08 10:23:38.000'),('2024-02-22','demo','framework','aff5143220be9b97954e868ef7c33b7c',1,NULL,0,'2024-03-08 10:23:39.000'),('2024-02-22','demo','framework','b55f5c472d9318a51871369fd3d9e09d',1,NULL,0,'2024-03-08 10:23:38.000'),('2024-02-22','demo','framework','c4a1da95015516e8d163f5991722edbe',1,NULL,0,'2024-03-08 10:23:39.000'),('2024-02-22','demo','framework','c957173f8dcb942717a6c512f17a2f13',1,NULL,0,'2024-03-08 10:23:38.000'),('2024-02-22','demo','framework','cd9a507d1334483c51dc8fba29d69bf5',1,NULL,0,'2024-03-08 10:23:39.000'),('2024-02-22','demo','framework','ea81a222c97010c12960ec16fc59b0ae',1,NULL,0,'2024-03-08 10:23:38.000'),('2024-02-22','demo','framework','ee87a374e7466e2ff108e8790c370025',1,NULL,0,'2024-03-08 10:23:39.000');
 /*!40000 ALTER TABLE `changelog_audit` ENABLE KEYS */;
 
 --
@@ -82,7 +82,7 @@ CREATE TABLE `changelog_audit_detail` (
 --
 
 /*!40000 ALTER TABLE `changelog_audit_detail` DISABLE KEYS */;
-INSERT INTO `changelog_audit_detail` VALUES ('690f45115f9f280443774e836599d671','ALTER TABLE `cmdb_attr`    ADD COLUMN `is_searchable` tinyint NULL COMMENT \'是否允许搜索\' AFTER `is_required`;'),('ca32d7b5ae3823875afa38ed75fe8cf6','ALTER TABLE `mq_topic`    ADD COLUMN `config` longtext NULL COMMENT \'配置\' AFTER `is_active`;');
+INSERT INTO `changelog_audit_detail` VALUES ('0580bfe61ba804d1a120a60663a00c2a','\nCREATE TABLE IF NOT EXISTS `diagram_template_status`\n(\n    `id`          bigint                                                        NOT NULL COMMENT \'主键\',\n    `template_id` bigint                                                        NULL DEFAULT NULL COMMENT \'模板id\',\n    `is_start`    tinyint                                                       NULL DEFAULT 0 COMMENT \'是否开始\',\n    `is_edit`     tinyint                                                       NULL DEFAULT NULL COMMENT \'允许编辑\',\n    `is_end`      tinyint                                                       NULL DEFAULT 0 COMMENT \'是否结束\',\n    `name`        varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci  NULL DEFAULT NULL COMMENT \'唯一标识\',\n    `label`       varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci  NULL DEFAULT NULL COMMENT \'名称\',\n    `sort`        int                                                           NULL DEFAULT NULL COMMENT \'排序\',\n    `description` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT \'说明\',\n    `color`       varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci  NULL DEFAULT NULL,\n    PRIMARY KEY (`id`) USING BTREE,\n    INDEX `idx_obejct_id` (`template_id` ASC) USING BTREE\n) CHARACTER SET = utf8mb4  COLLATE = utf8mb4_general_ci;'),('1098d198eff33e1f57000310352868b5','ALTER TABLE `mongodb` DROP INDEX `uk_tenant_uuid`;'),('179df822ffd6d39be89591b4fcfe382b','\nALTER TABLE `diagram_catalog_auth`    MODIFY COLUMN `auth_uuid` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT \'授权uuid\' AFTER `auth_type`;'),('18be4a5ecf54c91c164171fe34b79ced','ALTER TABLE `master_user` MODIFY COLUMN `is_active` tinyint(1) NULL DEFAULT NULL COMMENT \'是否激活\' AFTER `phone`;'),('1f7f60734dd21e94df2b192a106398e9','ALTER TABLE `master_user` MODIFY COLUMN `is_email_active` tinyint(1) NULL DEFAULT NULL COMMENT \'是否通过邮件激活，1:已激活 0:未激活 -1:已过期\' AFTER `role`;'),('292e0f9379b9935d4480c89b29639eca','\nALTER TABLE `eoa_step`\n    CHANGE `id` `id` BIGINT NOT NULL   COMMENT \'id\',\n    CHANGE `name` `name` VARCHAR(100) CHARSET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL   COMMENT \'名称\',\n    CHANGE `eoa_id` `eoa_id` BIGINT NOT NULL   COMMENT \'eoa的id\',\n    CHANGE `group_id` `group_id` BIGINT NULL   COMMENT \'分组id\',\n    CHANGE `policy` `policy` VARCHAR(50) CHARSET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL   COMMENT \'审批策略\',\n    CHANGE `status` `status` VARCHAR(50) CHARSET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL   COMMENT \'状态\',\n    CHANGE `start_time` `start_time` TIMESTAMP(3) NULL   COMMENT \'开始时间\',\n    CHANGE `end_time` `end_time` TIMESTAMP(3) NULL   COMMENT \'结束时间\',\n    CHANGE `comment_template_hash` `comment_template_hash` CHAR(32) CHARSET utf8mb4 COLLATE utf8mb4_general_ci NULL   COMMENT \'回复模板hash值\',\n    CHANGE `is_history` `is_history` TINYINT(1) NOT NULL   COMMENT \'是否是历史数据\',COMMENT=\'eoa步骤信息表\';'),('2a74a9d804d4ffd52cdaeb59371021fb','\nALTER TABLE `diagram_catalog`    MODIFY COLUMN `type` enum (\'cmdb\',\'common\',\'global\') CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT \'类型\' AFTER `name`;'),('2b20ef18c7bb133a48b6737dddeed935','ALTER TABLE `datasource` ADD PRIMARY KEY (`tenant_uuid`) USING BTREE;'),('2bcb5c0a22c049b216f00ea7c660e3cd','ALTER TABLE `tenant` DROP INDEX `uk_uuid`;'),('313141e2100da24b876642ed1dfa1239','\nCREATE PROCEDURE handleProcessTaskFormAttributeData()\nBEGIN\n    DECLARE v_id BIGINT DEFAULT generateSnowflakeId();\n    UPDATE `processtask_formattribute_data` SET `id` = `id` + v_id;\n    INSERT INTO `form_attribute_data` (`id`, `form_uuid`, `handler`, `attribute_label`, `attribute_uuid`, `data`)\n        SELECT\n        a.`id`,\n        b.`form_uuid`,\n        IFNULL(a.`type`, \'\'),\n        IFNULL(a.`attribute_label`, \'\'),\n        a.`attribute_uuid`,\n        IFNULL(a.`data`, \'\')\n    FROM `processtask_formattribute_data` a\n    JOIN `processtask_form` b ON b.`processtask_id` = a.`processtask_id`\n    ORDER BY a.`processtask_id`, a.`sort`;\n    INSERT INTO `processtask_formattribute` (`processtask_id`, `form_attribute_data_id`)\n    SELECT\n        a.`processtask_id`,\n        a.`id`\n    FROM `processtask_formattribute_data` a\n    ORDER BY a.`processtask_id`, a.`sort`;END $$'),('33d747bce279f9346feda96ca50ceeec','DROP FUNCTION IF EXISTS `generateSnowflakeId`;'),('39087e884ea2c85923975813b14ca1e8','\nALTER TABLE `diagram_graph_version`    ADD COLUMN `is_end` tinyint NULL DEFAULT NULL COMMENT \'是否终结版本\' AFTER `is_editing`;'),('3d7488727423f82b33af796b76839d67','\nCREATE TABLE `eoa_step_user_content_file` (\n    `eoa_id` bigint NOT NULL COMMENT \'eoa的id\',\n    `eoa_step_id` bigint NOT NULL COMMENT \'eoa步骤的id\',\n    `eoa_step_user_content_id` bigint NOT NULL COMMENT \'eoa步骤回复的id\',\n    `file_id` bigint NOT NULL COMMENT \'附件id\',\n    PRIMARY KEY (`eoa_step_user_content_id`,`file_id`),\n    KEY `idx_file_id` (`file_id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT=\'eoa步骤回复附件表\';'),('4f8f602a143d0470b09470ef53382050','ALTER TABLE `mongodb` DROP COLUMN `tenant_id`;'),('524772d047cc4c463b4a7744a5cf2b7f','\nALTER TABLE `processtask_step_eoa`\n    CHANGE `processtask_id` `processtask_id` BIGINT NOT NULL   COMMENT \'工单的id\',\n    CHANGE `processtask_step_id` `processtask_step_id` BIGINT NOT NULL   COMMENT \'工单步骤的id\',\n    CHANGE `eoa_id` `eoa_id` BIGINT NOT NULL   COMMENT \'eoa的id\',\n    CHANGE `template_id` `template_id` BIGINT NULL   COMMENT \'eoa模板的id\',\n    CHANGE `config` `config` MEDIUMTEXT CHARSET utf8mb4 COLLATE utf8mb4_general_ci NULL   COMMENT \'配置信息\',COMMENT=\'工单步骤与eoa关系表\';'),('5426233ce9eb3fe94a5a9df57a0f4d98','ALTER TABLE `master_user_password` ADD UNIQUE INDEX `unique_useruuid`(`user_uuid`) USING BTREE;'),('6281730e3667c8e9d03f9228033fcaa6','DROP PROCEDURE IF EXISTS `handleProcessTaskFormAttributeData`;'),('6699ea5ba573049f60e40ffe831a9c3e','ALTER TABLE `tenant_modulegroup` DROP PRIMARY KEY;'),('690f45115f9f280443774e836599d671','ALTER TABLE `cmdb_attr`    ADD COLUMN `is_searchable` tinyint NULL COMMENT \'是否允许搜索\' AFTER `is_required`;'),('6eaa9634ce53657f7b5139cbf7d1844b','ALTER TABLE `master_user` COMMENT = \'租户用户\';'),('7133a8520cef8a4004f5cb132acf2361','\nALTER TABLE `eoa_step_user`\n    CHANGE `eoa_id` `eoa_id` BIGINT NOT NULL   COMMENT \'eoa的id\',\n    CHANGE `eoa_step_id` `eoa_step_id` BIGINT NOT NULL   COMMENT \'eoa步骤的id\',\n    CHANGE `user_uuid` `user_uuid` CHAR(32) CHARSET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL   COMMENT \'处理人\',COMMENT=\'eoa步骤处理人表\';'),('76d8c243ea682bf120373698c1f15bf8','\nALTER TABLE `cmdb_sync_mapping`    MODIFY COLUMN `action` enum(\'insert\',\'replace\',\'delete\',\'update\') CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT \'insert\' COMMENT \'动作\' AFTER `field`;'),('77b4c9bf081f3c3d8cd7d88d86003fdc','ALTER TABLE `master_user` MODIFY COLUMN `user_name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT \'用户名\' AFTER `user_id`;'),('786958578b62cc04f4e10d7920e33a32','\nALTER TABLE `eoa`\n    CHANGE `id` `id` BIGINT NOT NULL   COMMENT \'id\',\n    CHANGE `group_id` `group_id` BIGINT NULL   COMMENT \'分组id\',\n    CHANGE `status` `status` VARCHAR(50) CHARSET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL   COMMENT \'状态\',\n    CHANGE `start_time` `start_time` TIMESTAMP(3) NULL   COMMENT \'开始时间\',\n    CHANGE `end_time` `end_time` TIMESTAMP(3) NULL   COMMENT \'结束时间\',\n    CHANGE `user_uuid` `user_uuid` CHAR(32) CHARSET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL   COMMENT \'发起人\',COMMENT=\'eoa信息表\';'),('79e4935f46754f26ddf419bb04b52125','ALTER TABLE `master_user_password` ADD UNIQUE INDEX `unique_userid`(`user_id`) USING BTREE;'),('7d45242895eddd0287da83e735793556','\nALTER TABLE `master_user`ADD COLUMN `reset_pwd_email_time` timestamp(3) NULL COMMENT \'重置密码邮件发送时间\' AFTER `is_super_admin`;'),('7d7a4b51a9fd22b9174d516e71b25613','ALTER TABLE `datasource` MODIFY COLUMN `tenant_uuid` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT \'租户uuid\' FIRST;'),('7e5f9b0a1e6bab5877fe0975330370a8','\nALTER TABLE `processtask_formattribute_data`\nDROP COLUMN `id`,DROP INDEX `id`;'),('8206ae74d1fdc387c872f6595a9fd752','\nCREATE TABLE IF NOT EXISTS `diagram_template_status_rel`\n(\n    `id`             bigint                                                    NULL DEFAULT NULL,\n    `from_status_id` bigint                                                    NOT NULL,\n    `to_status_id`   bigint                                                    NOT NULL,\n    `template_id`    bigint                                                    NOT NULL COMMENT \'模板id\',\n    `config`         longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL COMMENT \'属性设置\\n\',\n    PRIMARY KEY (`from_status_id`, `to_status_id`) USING BTREE,\n    UNIQUE INDEX `uk_id` (`id` ASC) USING BTREE\n) CHARACTER SET = utf8mb4  COLLATE = utf8mb4_general_ci;'),('832b57b37548d3307cfdea4bc1211b7c','ALTER TABLE `tenant` ADD PRIMARY KEY (`uuid`) USING BTREE;'),('8492bb6aa97fb500fb42ecae0cedfced','\nALTER TABLE `eoa_template`    COMMENT=\'eoa模板表\';'),('895f208a7d5c8185487fdcbde9421031','DROP TABLE IF EXISTS `form_attribute_data`;'),('8a435933959703dc62bc123442ff92e4','\nALTER TABLE `eoa_content`\n    CHANGE `hash` `hash` CHAR(32) CHARSET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL   COMMENT \'hash\',\n    CHANGE `content` `content` MEDIUMTEXT CHARSET utf8mb4 COLLATE utf8mb4_general_ci NULL   COMMENT \'内容\',COMMENT=\'eoa描述内容表\';'),('8db37669b99652a8eb60c39f2e11f2f6','ALTER TABLE `tenant` DROP COLUMN `id`;'),('911d77661b752ad090e645f8a9d2647e','ALTER TABLE `master_user` MODIFY COLUMN `user_id` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT \'用户id\' AFTER `uuid`;'),('927f27378a3f3a6ef3f34ad35000e28c','\nCREATE TABLE IF NOT EXISTS `cmdb_sync_objtype` (\n                                                   `id` bigint NOT NULL,\n                                                   `obj_category` varchar(255) COLLATE utf8mb4_general_ci NOT NULL COMMENT \'对象大类\',\n                                                   `obj_type` varchar(255) COLLATE utf8mb4_general_ci NOT NULL COMMENT \'对象小类\',\n                                                   `ci_id` bigint DEFAULT NULL COMMENT \'模型id\',\n                                                   PRIMARY KEY (`id`) USING BTREE,\n                                                   UNIQUE KEY `uk_obj` (`obj_category`,`obj_type`) USING BTREE,\n                                                   UNIQUE KEY `uk_ciid` (`ci_id`) USING BTREE) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;'),('95cf9d9c2a65a747cd539fb90e6dd5a7','\nALTER TABLE `cmdb_attr`    ADD COLUMN `is_searchable` tinyint NULL COMMENT \'是否允许搜索\' AFTER `is_required`;'),('96237da380da63f21b615a5e4c1b3dd6','\nALTER TABLE `diagram_graph_version`    ADD COLUMN `is_editing` tinyint NULL DEFAULT NULL COMMENT \'是否编辑中\' AFTER `status_id`;'),('9c93a752d3d04c8718845da9c96335fa','ALTER TABLE `tenant_modulegroup` ADD PRIMARY KEY (`tenant_uuid`, `module_group`) USING BTREE;'),('9c9d43cd11ed00f1b2e944ab80832265','\nALTER TABLE `diagram_graph`    MODIFY COLUMN `is_private` tinyint NULL DEFAULT NULL COMMENT \'是否私有架构图\' AFTER `user_id`;'),('9cea396e1e814f6ff58be3d11c3f84ff','ALTER TABLE `tenant_modulegroup` DROP COLUMN `tenant_id`;'),('a67a939c1c9ff979c69076ac102573fb','DROP TABLE IF EXISTS `processtask_formattribute`;'),('a93e082378fd3676681d51b4368033d1','ALTER TABLE `master_user` MODIFY COLUMN `phone` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT \'手机\' AFTER `email`;'),('ab40f0806909585662d9a181050befc0','ALTER TABLE `master_user` MODIFY COLUMN `email` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT \'邮箱\' AFTER `pinyin`;'),('ab8500384bff9eed23b59d0345d5a0ac','ALTER TABLE `master_user` MODIFY COLUMN `pinyin` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT \'拼音\' AFTER `user_name`;'),('ad8548cea45c89bb5430ba124466aa72','ALTER TABLE `datasource` DROP INDEX `uk_tenant_uuid`;'),('aff5143220be9b97954e868ef7c33b7c','CALL handleProcessTaskFormAttributeData();'),('b2258c7c0f264b32cf7c3636de5a17b3','\nALTER TABLE `eoa_step_user_content`\nDROP COLUMN `file_id_list_hash`,\n  CHANGE `id` `id` BIGINT NOT NULL   COMMENT \'id\',\n  CHANGE `eoa_id` `eoa_id` BIGINT NOT NULL   COMMENT \'eoa的id\',\n  CHANGE `eoa_step_id` `eoa_step_id` BIGINT NOT NULL   COMMENT \'eoa步骤的id\',\n  CHANGE `type` `type` VARCHAR(50) CHARSET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL   COMMENT \'类型\',\n  CHANGE `content_hash` `content_hash` CHAR(32) CHARSET utf8mb4 COLLATE utf8mb4_general_ci NULL   COMMENT \'内容的hash值\',\n  CHANGE `fcu` `fcu` CHAR(32) CHARSET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL   COMMENT \'创建人\',\n  CHANGE `fcd` `fcd` TIMESTAMP(3) NOT NULL   COMMENT \'创建时间\',COMMENT=\'eoa步骤处理信息表\';'),('b55f5c472d9318a51871369fd3d9e09d','\nCREATE TABLE `form_attribute_data` (\n  `id` BIGINT NOT NULL COMMENT \'id\',\n  `form_uuid` CHAR(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT \'表单uuid\',\n  `handler` VARCHAR(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT \'类型\',\n  `attribute_label` VARCHAR(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT \'属性名\',\n  `attribute_uuid` CHAR(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT \'属性uuid\',\n  `data` MEDIUMTEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci COMMENT \'属性值,json格式\',\n  PRIMARY KEY (`id`) USING BTREE) ENGINE=INNODB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT=\'表单实例属性当前值\';'),('b93251dabeca1d2e016de94200536eb6','ALTER TABLE `datasource` DROP PRIMARY KEY;'),('c02ffc705d2b935a5829ad1d9ad13a34','\nALTER TABLE `diagram_graph_version`    ADD COLUMN `status_id` bigint NULL DEFAULT NULL COMMENT \'状态id\' AFTER `is_active`;'),('c1dc48805d0e708103aa128463e04d31','ALTER TABLE `tenant_modulegroup` MODIFY COLUMN `tenant_uuid` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT \'租户uuid\' FIRST;'),('c413595333448e21cd931689caae967a','ALTER TABLE `master_user` MODIFY COLUMN `uuid` char(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT \'uuid\' FIRST;'),('c4a1da95015516e8d163f5991722edbe','DROP PROCEDURE `handleProcessTaskFormAttributeData`;'),('c957173f8dcb942717a6c512f17a2f13','\nCREATE TABLE `processtask_formattribute` (\n  `processtask_id` BIGINT NOT NULL COMMENT \'工单id\',\n  `form_attribute_data_id` BIGINT NOT NULL COMMENT \'表单属性值id\',\n  PRIMARY KEY (`processtask_id`,`form_attribute_data_id`)) ENGINE=INNODB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT=\'工单与表单属性值关系表\';'),('ca32d7b5ae3823875afa38ed75fe8cf6','ALTER TABLE `mq_topic`    ADD COLUMN `config` longtext NULL COMMENT \'配置\' AFTER `is_active`;'),('cd9a507d1334483c51dc8fba29d69bf5','DROP FUNCTION `generateSnowflakeId`;'),('d72b72362b148e3f49bfe8fb987122c5','ALTER TABLE `master_user` ADD COLUMN `is_super_admin` tinyint(1) NULL DEFAULT 0 COMMENT \'是否超级管理员\' AFTER `is_subscribe`;'),('d7f7727b75a771da6d4bec29c72b4031','ALTER TABLE `datasource` DROP COLUMN `tenant_id`;'),('e42a593b065738aecf6a7e184aa2f4e0','ALTER TABLE `cmdb_sync_objtype` DROP INDEX `uk_ciid`;'),('e4affaa417cb67a6147c4d28f7f9194f','ALTER TABLE `tenant` DROP PRIMARY KEY;'),('ea81a222c97010c12960ec16fc59b0ae','\nALTER TABLE `processtask_formattribute_data`\n  ADD COLUMN `id` BIGINT NOT NULL AUTO_INCREMENT FIRST,\n  ADD KEY(`id`),AUTO_INCREMENT=0;'),('eb91f89f7882d21bd540baea7794035a','ALTER TABLE `mongodb` ADD PRIMARY KEY (`tenant_uuid`) USING BTREE;'),('ee31ebd60d40eaec8889157928c75520','\nALTER TABLE `mq_topic`    ADD COLUMN `config` longtext NULL COMMENT \'配置\' AFTER `is_active`;'),('ee87a374e7466e2ff108e8790c370025','\nCREATE FUNCTION `generateSnowflakeId`() RETURNS BIGINT DETERMINISTIC\nBEGIN\n    DECLARE SCHEDULE_SERVER_ID BIGINT DEFAULT 1;\n    DECLARE START_TIMESTAMP BIGINT DEFAULT 1577808000;\n    DECLARE SEQUENCE_BIT BIGINT DEFAULT 13;\n    DECLARE MACHINE_BIT BIGINT DEFAULT 10;\n    DECLARE TIMESTAMP_LEFT BIGINT DEFAULT SEQUENCE_BIT + MACHINE_BIT;\n    DECLARE MAX_SEQUENCE BIGINT DEFAULT ~(-1 << SEQUENCE_BIT);\n    DECLARE MAX_MACHINE_ID BIGINT DEFAULT ~(-1 << MACHINE_BIT);\n    DECLARE machineIdPart BIGINT DEFAULT (SCHEDULE_SERVER_ID & MAX_MACHINE_ID) << SEQUENCE_BIT;\n    DECLARE currentStamp BIGINT;\n    SET currentStamp = UNIX_TIMESTAMP(NOW());\n    IF currentStamp < @lastStamp THEN\n        WHILE currentStamp < @lastStamp DO\n		    SET currentStamp = UNIX_TIMESTAMP(NOW());\n        END WHILE;\n    END IF;\n    IF currentStamp = @lastStamp THEN\n        SET @sequence = (@sequence + 1) & MAX_SEQUENCE;\n        IF @sequence = 0 THEN\n            WHILE currentStamp < @lastStamp DO\n		        SET currentStamp = UNIX_TIMESTAMP(NOW());\n            END WHILE;\n        END IF;\n    ELSE\n        SET @sequence = 0;\n    END IF;\n    SET @lastStamp = currentStamp;\n    RETURN ((currentStamp - START_TIMESTAMP) << TIMESTAMP_LEFT) | machineIdPart | @sequence;END $$'),('f651416819d20471b43ab71b2f8da9f5','ALTER TABLE `master_user` MODIFY COLUMN `role` enum(\'\',\'MASTER_ADMIN\',\'MASTER_MANAGER\') CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT \'角色\' AFTER `is_active`;'),('fe158bbd96e01e4bd5c871dc60dff730','ALTER TABLE `mongodb` DROP PRIMARY KEY;');
 /*!40000 ALTER TABLE `changelog_audit_detail` ENABLE KEYS */;
 
 --
@@ -92,16 +92,14 @@ INSERT INTO `changelog_audit_detail` VALUES ('690f45115f9f280443774e836599d671',
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `datasource` (
-  `tenant_id` bigint NOT NULL COMMENT '租户id',
-  `tenant_uuid` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '租户uuid',
+  `tenant_uuid` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '租户uuid',
   `url` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '数据源url',
   `username` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '用户名',
   `password` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '密码',
   `driver` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '数据库驱动',
   `host` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '主机ip',
   `port` int DEFAULT NULL COMMENT '端口',
-  PRIMARY KEY (`tenant_id`) USING BTREE,
-  UNIQUE KEY `uk_tenant_uuid` (`tenant_uuid`) USING BTREE
+  PRIMARY KEY (`tenant_uuid`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='数据源';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -110,7 +108,7 @@ CREATE TABLE `datasource` (
 --
 
 /*!40000 ALTER TABLE `datasource` DISABLE KEYS */;
-INSERT INTO `datasource` VALUES (1,'demo','jdbc:mysql://{host}:{port}/{dbname}?characterEncoding=UTF-8&jdbcCompliantTruncation=false&allowMultiQueries=true&useSSL=false&&serverTimeZone=Asia/Shanghai','root','Zanyue$2022','com.mysql.cj.jdbc.Driver','192.168.1.135',3306);
+INSERT INTO `datasource` VALUES ('demo','jdbc:mysql://{host}:{port}/{dbname}?characterEncoding=UTF-8&jdbcCompliantTruncation=false&allowMultiQueries=true&useSSL=false&&serverTimeZone=Asia/Shanghai','root','Zanyue$2022','com.mysql.cj.jdbc.Driver','192.168.1.135',3306);
 /*!40000 ALTER TABLE `datasource` ENABLE KEYS */;
 
 --
@@ -142,21 +140,23 @@ CREATE TABLE `documentonline_config` (
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `master_user` (
-  `uuid` char(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `user_id` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `user_name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `pinyin` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `email` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `phone` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `is_active` tinyint(1) DEFAULT NULL,
-  `role` enum('','MASTER_ADMIN','MASTER_MANAGER') CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
-  `is_email_active` tinyint(1) DEFAULT NULL,
+  `uuid` char(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT 'uuid',
+  `user_id` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '用户id',
+  `user_name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '用户名',
+  `pinyin` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '拼音',
+  `email` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '邮箱',
+  `phone` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '手机',
+  `is_active` tinyint(1) DEFAULT NULL COMMENT '是否激活',
+  `role` enum('','MASTER_ADMIN','MASTER_MANAGER') CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '角色',
+  `is_email_active` tinyint(1) DEFAULT NULL COMMENT '是否通过邮件激活，1:已激活 0:未激活 -1:已过期',
   `active_email_time` timestamp(3) NULL DEFAULT NULL COMMENT '激活邮件发送时间',
   `fcd` timestamp(3) NULL DEFAULT NULL COMMENT '创建时间',
   `email_send_count` int DEFAULT '0' COMMENT '邮件发送次数',
   `is_subscribe` tinyint DEFAULT '1' COMMENT '是否订阅',
+  `is_super_admin` tinyint(1) DEFAULT '0' COMMENT '是否超级管理员',
+  `reset_pwd_email_time` timestamp(3) NULL DEFAULT NULL COMMENT '重置密码邮件发送时间',
   PRIMARY KEY (`uuid`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='租户用户';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -164,7 +164,7 @@ CREATE TABLE `master_user` (
 --
 
 /*!40000 ALTER TABLE `master_user` DISABLE KEYS */;
-INSERT INTO `master_user` VALUES ('111','admin','管理员','admin',NULL,NULL,1,NULL,0,NULL,'2023-09-07 09:28:57.000',0,1);
+INSERT INTO `master_user` VALUES ('111','admin','管理员','admin',NULL,NULL,1,NULL,0,NULL,'2023-09-07 09:28:57.000',0,1,0,NULL);
 /*!40000 ALTER TABLE `master_user` ENABLE KEYS */;
 
 --
@@ -180,7 +180,9 @@ CREATE TABLE `master_user_password` (
   `password` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '用户密码',
   `create_time` timestamp NULL DEFAULT NULL COMMENT '创建时间',
   `is_active` tinyint(1) DEFAULT NULL COMMENT '有效性',
-  PRIMARY KEY (`id`) USING BTREE
+  PRIMARY KEY (`id`) USING BTREE,
+  UNIQUE KEY `unique_useruuid` (`user_uuid`) USING BTREE,
+  UNIQUE KEY `unique_userid` (`user_id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=204 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -219,7 +221,6 @@ CREATE TABLE `master_user_session` (
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `mongodb` (
-  `tenant_id` bigint NOT NULL COMMENT '租户id',
   `tenant_uuid` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '租户uuid',
   `database` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '数据库名称',
   `username` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '用户名',
@@ -227,8 +228,7 @@ CREATE TABLE `mongodb` (
   `host` varchar(1025) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '主机ip',
   `option` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '选择项',
   `auth_config` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci COMMENT '存放租户管理用于认证的信息',
-  PRIMARY KEY (`tenant_id`) USING BTREE,
-  UNIQUE KEY `uk_tenant_uuid` (`tenant_uuid`) USING BTREE
+  PRIMARY KEY (`tenant_uuid`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='mogodb数据库信息';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -237,7 +237,7 @@ CREATE TABLE `mongodb` (
 --
 
 /*!40000 ALTER TABLE `mongodb` DISABLE KEYS */;
-INSERT INTO `mongodb` VALUES (1,'demo','autoexec','autoexec','mongodbPwd','127.0.0.1:27017','authSource=autoexec',NULL);
+INSERT INTO `mongodb` VALUES ('demo','autoexec','autoexec','mongodbPwd','127.0.0.1:27017','authSource=autoexec',NULL);
 /*!40000 ALTER TABLE `mongodb` ENABLE KEYS */;
 
 --
@@ -287,7 +287,7 @@ CREATE TABLE `server_status` (
 --
 
 /*!40000 ALTER TABLE `server_status` DISABLE KEYS */;
-INSERT INTO `server_status` VALUES ('http://192.168.0.104:8282',1,'stop',3,5,'2023-09-07 09:28:57.937','system','2023-09-07 09:28:57.937','system','2023-09-07 09:28:57.937'),('http://192.168.0.97:8282',97,'stop',3,5,'2023-09-07 09:28:57.944','system','2023-09-07 09:28:57.944','system','2023-09-07 09:28:57.944'),(NULL,168,'startup',3,5,'2024-01-31 08:29:24.676','system','2023-11-10 02:33:18.566','system','2024-01-31 08:29:24.676'),(NULL,8341,'stop',3,5,'2023-09-07 09:28:57.949','system','2023-09-07 09:28:57.949','system','2023-09-07 09:28:57.949');
+INSERT INTO `server_status` VALUES ('http://192.168.0.104:8282',1,'stop',3,5,'2023-09-07 09:28:57.937','system','2023-09-07 09:28:57.937','system','2023-09-07 09:28:57.937'),('http://192.168.0.97:8282',97,'stop',3,5,'2023-09-07 09:28:57.944','system','2023-09-07 09:28:57.944','system','2023-09-07 09:28:57.944'),(NULL,168,'startup',3,5,'2024-03-08 10:23:46.118','system','2023-11-10 02:33:18.566','system','2024-03-08 10:23:46.118'),(NULL,8341,'stop',3,5,'2023-09-07 09:28:57.949','system','2023-09-07 09:28:57.949','system','2023-09-07 09:28:57.949');
 /*!40000 ALTER TABLE `server_status` ENABLE KEYS */;
 
 --
@@ -297,7 +297,6 @@ INSERT INTO `server_status` VALUES ('http://192.168.0.104:8282',1,'stop',3,5,'20
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tenant` (
-  `id` bigint NOT NULL COMMENT 'id',
   `uuid` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT 'uuid',
   `name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '租户名',
   `is_active` tinyint(1) DEFAULT '1' COMMENT '1:启用，0:禁用',
@@ -308,8 +307,7 @@ CREATE TABLE `tenant` (
   `is_need_demo` tinyint(1) DEFAULT NULL COMMENT '创建租户是否携带demo数据',
   `visit_time` timestamp(3) NULL DEFAULT NULL COMMENT '租户当天第一次访问时间',
   `fcd` timestamp(3) NULL DEFAULT NULL COMMENT '创建时间',
-  PRIMARY KEY (`id`) USING BTREE,
-  UNIQUE KEY `uk_uuid` (`uuid`) USING BTREE
+  PRIMARY KEY (`uuid`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='租户信息表';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -318,7 +316,7 @@ CREATE TABLE `tenant` (
 --
 
 /*!40000 ALTER TABLE `tenant` DISABLE KEYS */;
-INSERT INTO `tenant` VALUES (1,'demo','demo',1,NULL,NULL,NULL,NULL,NULL,'2024-01-31 04:06:32.000',NULL);
+INSERT INTO `tenant` VALUES ('demo','demo',1,NULL,NULL,NULL,NULL,NULL,'2024-01-31 04:06:32.000',NULL);
 /*!40000 ALTER TABLE `tenant` ENABLE KEYS */;
 
 --
@@ -393,7 +391,7 @@ CREATE TABLE `tenant_module` (
 --
 
 /*!40000 ALTER TABLE `tenant_module` DISABLE KEYS */;
-INSERT INTO `tenant_module` VALUES ('demo','autoexec',0,0,'2024-01-26','2024-01-25 09:51:58.000','2024-01-25 09:51:58.000'),('demo','change',0,0,'2024-01-26','2024-01-25 09:51:58.000','2024-01-25 09:51:58.000'),('demo','cmdb',0,0,'2024-01-26','2024-01-25 09:51:58.000','2024-01-31 08:29:19.000'),('demo','codehub',0,0,'2024-01-26','2024-01-25 09:51:59.000','2024-01-25 09:51:59.000'),('demo','dashboard',0,0,'2024-01-26','2024-01-25 09:51:59.000','2024-01-25 09:51:59.000'),('demo','deploy',0,0,'2024-01-26','2024-01-25 09:51:59.000','2024-01-25 09:51:59.000'),('demo','diagram',0,0,'2024-01-26','2024-01-25 09:51:59.000','2024-01-25 09:51:59.000'),('demo','dr',0,0,'2024-01-26','2024-01-25 09:51:59.000','2024-01-25 09:51:59.000'),('demo','eoa',0,0,'2024-01-26','2024-01-25 09:51:58.000','2024-01-25 09:51:58.000'),('demo','event',0,0,'2024-01-26','2024-01-25 09:51:59.000','2024-01-25 09:51:59.000'),('demo','framework',0,0,'2024-01-26','2024-01-25 09:51:59.000','2024-01-25 09:51:59.000'),('demo','inspect',0,0,'2024-01-26','2024-01-25 09:51:59.000','2024-01-25 09:51:59.000'),('demo','knowledge',0,0,'2024-01-26','2024-01-25 09:51:59.000','2024-01-25 09:51:59.000'),('demo','master',0,0,'2024-01-26','2024-01-25 09:51:59.000','2024-01-25 09:51:59.000'),('demo','pbc',0,0,'2024-01-26','2024-01-25 09:51:59.000','2024-01-25 09:51:59.000'),('demo','process',0,0,'2024-01-26','2024-01-25 09:51:58.000','2024-01-25 09:51:58.000'),('demo','rdm',0,0,'2024-01-26','2024-01-25 09:51:59.000','2024-01-25 09:51:59.000'),('demo','report',0,0,'2024-01-26','2024-01-25 09:51:58.000','2024-01-25 09:51:58.000'),('demo','tagent',0,0,'2024-01-26','2024-01-25 09:51:59.000','2024-01-25 09:51:59.000'),('demo','tenant',0,0,'2024-01-26','2024-01-25 09:51:58.000','2024-01-25 09:51:58.000'),('demo','tlcb',0,0,'2024-01-26','2024-01-25 09:51:58.000','2024-01-25 09:51:58.000');
+INSERT INTO `tenant_module` VALUES ('demo','autoexec',0,0,'2024-01-26','2024-01-25 09:51:58.000','2024-01-25 09:51:58.000'),('demo','change',0,0,'2024-01-26','2024-01-25 09:51:58.000','2024-01-25 09:51:58.000'),('demo','cmdb',0,0,'2024-02-06','2024-01-25 09:51:58.000','2024-03-08 10:23:36.000'),('demo','codehub',0,0,'2024-01-26','2024-01-25 09:51:59.000','2024-01-25 09:51:59.000'),('demo','dashboard',0,0,'2024-01-26','2024-01-25 09:51:59.000','2024-01-25 09:51:59.000'),('demo','deploy',0,0,'2024-01-26','2024-01-25 09:51:59.000','2024-01-25 09:51:59.000'),('demo','diagram',0,0,'2024-03-01','2024-01-25 09:51:59.000','2024-03-08 10:23:41.000'),('demo','dr',0,0,'2024-01-26','2024-01-25 09:51:59.000','2024-01-25 09:51:59.000'),('demo','eoa',0,0,'2024-02-20','2024-01-25 09:51:58.000','2024-03-08 10:23:38.000'),('demo','event',0,0,'2024-01-26','2024-01-25 09:51:59.000','2024-01-25 09:51:59.000'),('demo','framework',0,0,'2024-02-22','2024-01-25 09:51:59.000','2024-03-08 10:23:39.000'),('demo','inspect',0,0,'2024-01-26','2024-01-25 09:51:59.000','2024-01-25 09:51:59.000'),('demo','knowledge',0,0,'2024-01-26','2024-01-25 09:51:59.000','2024-01-25 09:51:59.000'),('demo','master',0,0,'2024-01-26','2024-01-25 09:51:59.000','2024-01-25 09:51:59.000'),('demo','pbc',0,0,'2024-01-26','2024-01-25 09:51:59.000','2024-01-25 09:51:59.000'),('demo','process',0,0,'2024-03-04','2024-01-25 09:51:58.000','2024-03-08 10:23:35.000'),('demo','rdm',0,0,'2024-01-26','2024-01-25 09:51:59.000','2024-01-25 09:51:59.000'),('demo','report',0,0,'2024-01-26','2024-01-25 09:51:58.000','2024-01-25 09:51:58.000'),('demo','tagent',0,0,'2024-01-26','2024-01-25 09:51:59.000','2024-01-25 09:51:59.000'),('demo','tenant',0,0,'2024-01-26','2024-01-25 09:51:58.000','2024-01-25 09:51:58.000'),('demo','tlcb',0,0,'2024-01-26','2024-01-25 09:51:58.000','2024-01-25 09:51:58.000');
 /*!40000 ALTER TABLE `tenant_module` ENABLE KEYS */;
 
 --
@@ -450,10 +448,9 @@ INSERT INTO `tenant_module_dmlsql_detail` VALUES ('01fe50af38c7c821efe76ab13ffb1
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tenant_modulegroup` (
-  `tenant_id` bigint NOT NULL COMMENT '租户id',
-  `tenant_uuid` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '租户uuid',
+  `tenant_uuid` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '租户uuid',
   `module_group` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '模块组',
-  PRIMARY KEY (`tenant_id`,`module_group`) USING BTREE
+  PRIMARY KEY (`tenant_uuid`,`module_group`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='租户模块组关联表';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -462,7 +459,7 @@ CREATE TABLE `tenant_modulegroup` (
 --
 
 /*!40000 ALTER TABLE `tenant_modulegroup` DISABLE KEYS */;
-INSERT INTO `tenant_modulegroup` VALUES (1,'demo','autoexec'),(1,'demo','cmdb'),(1,'demo','codehub'),(1,'demo','dashboard'),(1,'demo','deploy'),(1,'demo','inspect'),(1,'demo','knowledge'),(1,'demo','pbc'),(1,'demo','process'),(1,'demo','rdm'),(1,'demo','report');
+INSERT INTO `tenant_modulegroup` VALUES ('demo','autoexec'),('demo','cmdb'),('demo','codehub'),('demo','dashboard'),('demo','deploy'),('demo','inspect'),('demo','knowledge'),('demo','pbc'),('demo','process'),('demo','rdm'),('demo','report');
 /*!40000 ALTER TABLE `tenant_modulegroup` ENABLE KEYS */;
 
 --
@@ -484,7 +481,7 @@ CREATE TABLE `version` (
 --
 
 /*!40000 ALTER TABLE `version` DISABLE KEYS */;
-INSERT INTO `version` VALUES ('2024-01-24','2024-01-25 09:51:58.000','2024-01-25 09:51:58.000');
+INSERT INTO `version` VALUES ('2024-02-21','2024-01-25 09:51:58.000','2024-03-08 10:23:35.000');
 /*!40000 ALTER TABLE `version` ENABLE KEYS */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -496,4 +493,4 @@ INSERT INTO `version` VALUES ('2024-01-24','2024-01-25 09:51:58.000','2024-01-25
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-03-07 16:48:20
+-- Dump completed on 2024-03-08 18:24:38
