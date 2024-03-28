@@ -108,7 +108,7 @@ CREATE TABLE `datasource` (
 --
 
 /*!40000 ALTER TABLE `datasource` DISABLE KEYS */;
-INSERT INTO `datasource` VALUES ('demo','jdbc:mysql://{host}:{port}/{dbname}?characterEncoding=UTF-8&jdbcCompliantTruncation=false&allowMultiQueries=true&useSSL=false&&serverTimeZone=Asia/Shanghai','root','Zanyue$2022','com.mysql.cj.jdbc.Driver','192.168.1.135',3306);
+INSERT INTO `datasource` VALUES ('demo','jdbc:mysql://{host}:{port}/{dbname}?characterEncoding=UTF-8&jdbcCompliantTruncation=false&allowMultiQueries=true&useSSL=false&&serverTimeZone=Asia/Shanghai','root','root','com.mysql.cj.jdbc.Driver','localhost',3306);
 /*!40000 ALTER TABLE `datasource` ENABLE KEYS */;
 
 --
@@ -494,4 +494,4 @@ INSERT INTO `version` VALUES ('2024-02-21','2024-01-25 09:51:58.000','2024-03-28
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-03-28 12:28:12
+-- Dump completed on 2024-03-28 12:29:25
