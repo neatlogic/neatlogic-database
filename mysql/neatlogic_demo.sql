@@ -12489,7 +12489,7 @@ COMMIT;
 -- ----------------------------
 CREATE TABLE `runnergroup_tag`  (
   `group_id` bigint NOT NULL COMMENT '执行器组id',
-  `tag_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '标签id',
+  `tag_id` bigint NOT NULL COMMENT '标签id',
   PRIMARY KEY (`group_id`, `tag_id`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '执行器组标签';
 
