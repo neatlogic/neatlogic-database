@@ -8794,7 +8794,6 @@ CREATE TABLE `matrix_fd5406cfedda4dd69d3f7baa6e569052` (
 /*!50001 SET character_set_client      = utf8mb4 */;
 /*!50001 SET character_set_results     = utf8mb4 */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
-/*!50013 DEFINER=`root`@`%` SQL SECURITY DEFINER */
 /*!50001 VIEW `cmdb_479572181131264` AS select `t`.`id` AS `id`,`t`.`uuid` AS `uuid`,`t`.`name` AS `name`,`t`.`uuid` AS `933989580652544`,`t`.`name` AS `933989580652545`,md5(lower(`t`.`uuid`)) AS `933989580652544_hash`,md5(lower(`t`.`name`)) AS `933989580652545_hash`,'479572181131264' AS `ci_id` from `neatlogic_demo`.`team` `t` */;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
@@ -8810,7 +8809,6 @@ CREATE TABLE `matrix_fd5406cfedda4dd69d3f7baa6e569052` (
 /*!50001 SET character_set_client      = utf8mb4 */;
 /*!50001 SET character_set_results     = utf8mb4 */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
-/*!50013 DEFINER=`root`@`%` SQL SECURITY DEFINER */
 /*!50001 VIEW `cmdb_479643459133440` AS select `u`.`id` AS `id`,md5(`u`.`id`) AS `uuid`,`u`.`user_name` AS `name`,`u`.`user_id` AS `479643459133444`,`u`.`user_name` AS `479643459133446`,group_concat(`t`.`name` separator ',') AS `479643459133441`,md5(lower(`u`.`user_id`)) AS `479643459133444_hash`,md5(lower(`u`.`user_name`)) AS `479643459133446_hash`,md5(lower(group_concat(`t`.`name` separator ','))) AS `479643459133441_hash`,'479643459133440' AS `ci_id` from ((`neatlogic_demo`.`user` `u` left join `neatlogic_demo`.`user_team` `ut` on((`u`.`uuid` = `ut`.`user_uuid`))) left join `neatlogic_demo`.`team` `t` on((`t`.`uuid` = `ut`.`team_uuid`))) group by `u`.`uuid` */;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
@@ -8826,7 +8824,6 @@ CREATE TABLE `matrix_fd5406cfedda4dd69d3f7baa6e569052` (
 /*!50001 SET character_set_client      = utf8mb4 */;
 /*!50001 SET character_set_results     = utf8mb4 */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
-/*!50013 DEFINER=`root`@`%` SQL SECURITY DEFINER */
 /*!50001 VIEW `cmdb_479644625149952` AS select `t`.`id` AS `id`,`t`.`uuid` AS `uuid`,`t`.`name` AS `name`,`t`.`uuid` AS `933989723258880`,`t`.`name` AS `933989723258881`,md5(lower(`t`.`uuid`)) AS `933989723258880_hash`,md5(lower(`t`.`name`)) AS `933989723258881_hash`,'479644625149952' AS `ci_id` from `neatlogic_demo`.`team` `t` where (`t`.`level` = 'department') */;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
@@ -8842,7 +8839,6 @@ CREATE TABLE `matrix_fd5406cfedda4dd69d3f7baa6e569052` (
 /*!50001 SET character_set_client      = utf8mb4 */;
 /*!50001 SET character_set_results     = utf8mb4 */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
-/*!50013 DEFINER=`root`@`%` SQL SECURITY DEFINER */
 /*!50001 VIEW `matrix_a5dc289dc20d44b5b07ce975a0c5615e` AS select `u`.`id` AS `id`,md5(`u`.`id`) AS `uuid`,`u`.`user_name` AS `name`,`u`.`user_id` AS `user_id`,`u`.`user_name` AS `user_name`,`u`.`email` AS `email`,`u`.`phone` AS `phone`,if((`u`.`vip_level` = 0),'否','是') AS `vipLevel`,group_concat(`t`.`name` separator ',') AS `teamName` from ((`neatlogic_demo`.`user` `u` left join `neatlogic_demo`.`user_team` `ut` on((`u`.`uuid` = `ut`.`user_uuid`))) left join `neatlogic_demo`.`team` `t` on((`t`.`uuid` = `ut`.`team_uuid`))) where ((`u`.`is_active` = 1) and (`u`.`is_delete` = 0)) group by `u`.`uuid` */;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
