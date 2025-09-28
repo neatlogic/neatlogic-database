@@ -334,7 +334,7 @@ CREATE TABLE `server_status` (
 --
 
 /*!40000 ALTER TABLE `server_status` DISABLE KEYS */;
-INSERT INTO `server_status` VALUES ('http://192.168.0.104:8282',1,'startup',60,3,'2025-09-28 12:09:01.052','localhost',NULL,NULL,'system','2025-09-28 11:04:01.035');
+INSERT INTO `server_status` VALUES ('http://192.168.0.104:8282',1,'startup',60,3,'2025-09-28 12:15:01.052','localhost',NULL,NULL,'system','2025-09-28 11:04:01.035');
 /*!40000 ALTER TABLE `server_status` ENABLE KEYS */;
 
 --
@@ -541,4 +541,4 @@ INSERT INTO `version` VALUES ('2025-09-10','2023-10-17 08:44:09.000','2025-09-28
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-09-28 20:09:55
+-- Dump completed on 2025-09-28 20:15:40
