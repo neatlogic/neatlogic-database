@@ -11649,6 +11649,28 @@ CREATE TABLE `integration` (
 /*!40000 ALTER TABLE `integration` ENABLE KEYS */;
 
 --
+-- Table structure for table `integration_rate_limit`
+--
+
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `integration_rate_limit` (
+  `integration_uuid` char(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '集成配置uuid',
+  `window_start_time` timestamp(3) NULL DEFAULT NULL COMMENT '当前窗口开始时间',
+  `counter` int NOT NULL DEFAULT '0' COMMENT '当前窗口已允许调用次数',
+  `lcd` timestamp(3) NULL DEFAULT NULL COMMENT '更新时间',
+  PRIMARY KEY (`integration_uuid`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='集成调用限流状态表';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `integration_rate_limit`
+--
+
+/*!40000 ALTER TABLE `integration_rate_limit` DISABLE KEYS */;
+/*!40000 ALTER TABLE `integration_rate_limit` ENABLE KEYS */;
+
+--
 -- Table structure for table `integration_audit`
 --
 
