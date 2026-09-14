@@ -1980,7 +1980,7 @@ CREATE TABLE `autoexec_script` (
   `fcu` char(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '创建人',
   `is_lib` tinyint DEFAULT '0' COMMENT '是否库文件',
   PRIMARY KEY (`id`) USING BTREE,
-  UNIQUE KEY `uk_name` (`name`) USING BTREE,
+  UNIQUE KEY `uk_catalog_name` (`catalog_id`,`name`) USING BTREE,
   KEY `idx_type_id` (`type_id`) USING BTREE,
   KEY `idx_catalog_id` (`catalog_id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='自动化自定义工具表';
